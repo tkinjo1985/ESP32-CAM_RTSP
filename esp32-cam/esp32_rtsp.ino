@@ -21,7 +21,7 @@ void setup()
   WiFi.config(ip, gatway, subnet);
 
   // attempt to connect to Wifi network:
-  while (WiFi.status != WL_CONNECTED)
+  while (WiFi.status() != WL_CONNECTED)
   {
     Serial.print("Attempting to connect to SSID: ");
     Serial.println(ssid);

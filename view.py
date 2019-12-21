@@ -2,7 +2,7 @@ import cv2
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-esp_ip = ""
+esp_ip = "192.168.0.100"
 vcap = cv2.VideoCapture("rtsp://"+esp_ip+":8554/mjpeg/1")
 
 while True:
@@ -18,4 +18,4 @@ while True:
         break
 
 vcap.release()
-cv2.deqstroyAllWindows()
+cv2.destroyAllWindows()
