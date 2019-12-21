@@ -1,0 +1,6 @@
+{
+    "board": "esp32:esp32:esp32wrover",
+    "configuration": "PartitionScheme=huge_app,FlashMode=qio,FlashFreq=80,UploadSpeed=921600,DebugLevel=none",
+    "sketch": "esp32-cam/esp32_rtsp.ino",
+    "port": "/dev/cu.usbserial-A50285BI"
+}
