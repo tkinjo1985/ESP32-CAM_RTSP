@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+gibo 2.2.3 by Simon Whitaker <sw@netcetera.org>
+https://github.com/simonwhitaker/gibo
+>>>>>>> ade49fd981465e9d96183ddb689bd06b938d27cb
 ### https://raw.github.com/github/gitignore/55df35ee63aef4a6f859559af980c9fb87bee1a1/Python.gitignore
 
 # Byte-compiled / optimized / DLL files
@@ -10,7 +15,10 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+<<<<<<< HEAD
 .vscode
+=======
+>>>>>>> ade49fd981465e9d96183ddb689bd06b938d27cb
 build/
 develop-eggs/
 dist/
@@ -135,3 +143,9 @@ dmypy.json
 
 # pytype static type analyzer
 .pytype/
+<<<<<<< HEAD
+=======
+
+# vscode
+.vscode
+>>>>>>> ade49fd981465e9d96183ddb689bd06b938d27cb
