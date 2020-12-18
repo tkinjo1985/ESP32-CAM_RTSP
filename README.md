@@ -1,5 +1,5 @@
 # What is ESP32CAM_RTSP?
-A simple network camera using ESP32-CAM and RTSP protocol
+A simple network camera using ESP32-CAM and RTSP protocol.
 The video can be received and used with python.
 
 ## Usage
