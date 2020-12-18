@@ -1,7 +1,7 @@
 # ESP32CAM_RTSP
-ESP32-CAMとRTSPプロトコルを利用した簡易ネットワークカメラ。
-python等で映像を受け取り利用することができる。
+A simple network camera using ESP32-CAM and RTSP protocol
+The video can be received and used with python.
 
 ## 使い方
-1. esp32-cam/src/wifi_config.hに接続するWiFiの情報を記述。
-1. esp32_rtsp.inoをESP32-CAMに書き込む。
+1. Describe the WiFi information to be connected in esp32-cam/src/wifi_config.h.
+2. Write esp32_rtsp.ino to ESP32-CAM.
