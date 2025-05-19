@@ -18,24 +18,23 @@ void setup()
   Serial.setDebugOutput(true);
   Serial.println();
 
-  WiFi.config(ip, gatway, subnet);
+  WiFi.config(ip, gateway, subnet); // ← スペル修正
+
+  WiFi.begin(ssid, password); // ループ外で一度だけ呼ぶ
 
   // attempt to connect to Wifi network:
   while (WiFi.status() != WL_CONNECTED)
   {
     Serial.print("Attempting to connect to SSID: ");
     Serial.println(ssid);
-    // Connect to WPA/WPA2 network. Change this line if using open or WEP network:
-    WiFi.begin(ssid, password);
-
-    // wait 10 seconds for connection:
-    delay(10000);
+    delay(1000); // 1秒ごとに状態確認
   }
 
   esp_err_t err = cam.init(esp32cam_aithinker_config);
   if (err != ESP_OK)
   {
-    Serial.printf("Camera init failed with error 0x%x", err);
+    Serial.printf("Camera init failed with error 0x%x\n", err);
+    // ESP.restart(); // 必要ならリセット
     return;
   }
 
@@ -76,6 +75,7 @@ void loop()
       delete streamer;
       session = NULL;
       streamer = NULL;
+      client.stop(); // クライアント切断
     }
   }
   else
